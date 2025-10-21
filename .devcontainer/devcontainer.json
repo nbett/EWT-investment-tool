@@ -1,14 +1,11 @@
 {
   "name": "EWT-investment-tool",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "build": { "dockerfile": "Dockerfile", "context": ".." },
   "workspaceFolder": "/workspaces/EWT-investment-tool",
   "customizations": {
     "vscode": {
-      "settings": { "python.analysis.typeCheckingMode": "basic" },
-      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
+      "settings": { "python.analysis.typeCheckingMode": "basic" }
     }
   },
   "postCreateCommand": "pip install -r requirements.txt"
