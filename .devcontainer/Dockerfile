@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/python:3.11
 
-# Match your repo name
+# Must match your repo folder name
 WORKDIR /workspaces/EWT-investment-tool
 
-# requirements.txt lives at repo root (context is set to "..")
+# Context is the repo root (..), so this path is valid
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
